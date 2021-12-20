@@ -12,8 +12,33 @@
 </head>
 <body>
 
+    <header>
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col ms_logo">
+                    <img src="img/boolean-logo.jpg" alt="">
+                    <h1 class="d-inline-block">Campo Minato: la Griglia</h1>
+                </div>
+
+                <div class="col d-flex justify-content-end align-items-center">
+                    <span>Difficoltà:</span>
+                    <select class="mx-1" id="cars">
+                        <option value="1">Easy</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Hard</option>
+                    </select>
+                    <button class="w-25" id="levelchoice">Play</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main>
-        
+        <div class="container">
+            <div class="row" id="minesweeper-grid">
+
+            </div>
+        </div>
     </main>  
 
     <script type="text/javascript" src="myscript.js"></script>

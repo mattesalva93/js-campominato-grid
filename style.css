@@ -1,0 +1,17 @@
+.ms_logo > img{
+    height: 75px;
+}
+.ms_logo > h1{
+    line-height: 1;
+    vertical-align: middle;
+}
+#minesweeper-grid{
+    width: 1048px;
+}
+.ms_minesweeper-box{
+    border: 1px solid black;
+    width: 10%;
+    height: 105px;
+}
+
+
