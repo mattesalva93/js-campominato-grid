@@ -5,13 +5,29 @@
     line-height: 1;
     vertical-align: middle;
 }
-#minesweeper-grid{
-    width: 1048px;
+
+main{
+    background-color: #7FFFD4;
 }
-.ms_minesweeper-box{
+#minesweeper-grid{
+    width: 60%;
+    margin: 0 auto;
+
+}
+.ms_minesweeper-box-100,
+.ms_minesweeper-box-81,
+.ms_minesweeper-box-49{
     border: 1px solid black;
     width: 10%;
-    height: 105px;
+    height: 75px;
 }
-
-
+.ms_minesweeper-box-81{
+    width: 11%;
+}
+.ms_minesweeper-box-49{
+    width: 13%;
+}
+.ms_select-box{
+    background-color: #6495ED;
+    color: white;
+}
