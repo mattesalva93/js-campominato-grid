@@ -1,15 +1,19 @@
+//funzione per far restituire solo il testo interno
+function cellaclick (){
+    const valorecella = parseInt(this.textContent);
+    this.classList.add("ms_select-box");
+    console.log(valorecella);
+}
 
 // creo una funzione generica per far si che selezionando i box si colorino 
 function selettoreBox(elenco){
     for (let i = 0; i < elenco.length; i++) {
-
-        elenco[i].addEventListener("click",function(){
-            this.classList.add("ms_select-box");
-    
-        });
+        
+        elenco[i].addEventListener("click", cellaclick);
     }   
+    
+}
 
-};
 
 //faccio scegliere all'utente il livello di difficoltà alla quale vuole giocare
 let pulsanteScelta = document.getElementById("levelchoice");
@@ -37,10 +41,8 @@ pulsanteScelta.addEventListener("click", function(){
 
     //creo un array che contenga tutti miei box selezionandoli per la classe
     let elencoBox = document.getElementsByClassName("ms_selector");
-    console.log(elencoBox); 
 
     //faccio partire la funzione per colorarle al click
     selettoreBox(elencoBox);
 
 });
-
